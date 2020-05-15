@@ -1,1 +1,3 @@
-# The-Tech-Academy-Live-Project
+# The Tech Academy Live Project
+
+## Introduction
