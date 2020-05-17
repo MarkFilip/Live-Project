@@ -89,8 +89,8 @@ I wanted users to be able to limit the number of film results that are displayed
                         return render(request, 'SceneBetter/scenebetter_yourfilms.html', content)
 
 ### Front End
-•	Modal on error
-•	Table click
+* [Modal on ErrorI](#modal-on-error)
+* [Clickable table row](#clickable-table-row)
 
 #### Modal on Error
 When the user performs a search to add a film to their database or to refine the films shown from their database, there is a chance their search ends up having no results. For this situation I created a modal, using bootstrap and custom jQuery, that would pop up. I initially had to pass a flag that would change the status of a hidden checkbox when rendering the page dependent on the user’s search.
