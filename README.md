@@ -5,9 +5,9 @@ For the last 2 weeks of the tech academy we were tasked with creating an applica
 
 ## Code Highlights:
 ### Back End
-•	API
-•	Data scraping
-•	Database refined search
+* [API](#api)
+* [Data scraping](#data-scraping)
+* [Database refined search](#database-refined-search)
 
 #### API
 I was tasked with connecting to an API, getting a JSON response, parsing through the file, displaying, and then saving chosen information. I created a form that a user would use to search a movie title, which then would be converted into a format that could be passed to the API.
