@@ -112,3 +112,20 @@ Then using jQuery, I would show the modal if the checkbox was checked upon loadi
             }
         });
 
+#### Clickable table row
+The user’s stored films are displayed in a table. I wanted the user to be able to click on a table row to then take them to a specific film’s details page. I accomplished this by using a custom data attribute storing the link to the specific page.
+
+        <!--Links to specific detail page by passing pk using a custom attribute for jquery reasons-->
+        <tr data-href="{% url 'details' pk=movie.pk %}">
+        
+Then using jQuery, I put an event handler on the body that when a row with my custom data attribute is clicked, current window link is changed.
+
+        //Once the page has loaded adds an event handler on the body. When a table row with custom attribute data-href is
+        // clicked on, the handler changes the current window link to the link in the custom attribute
+
+        $(document).ready(function () {
+            $(document.body).on("click", "tr[data-href]", function() {
+                window.location.href = this.dataset.href;
+            });
+        });
+
