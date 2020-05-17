@@ -21,7 +21,7 @@ I was tasked with connecting to an API, getting a JSON response, parsing through
       response = requests.get(api, parameters)  # Get's request from API
       movie_data = response.json()
     
-If the request was denied I re-rendered the page, passing information to load the modal that is described later.
+If the request was denied I re-rendered the page, passing information to load the modal that is described [later](#modal-on-error).
 
     if movie_data['Response'] == "False":
       form = FilmSearchForm()  # Render the film search form
@@ -67,7 +67,7 @@ In this story I was tasked with using the Python library Beautiful Soup to displ
             return render(request, 'SceneBetter/scenebetter_news.html', content)
             
 #### Database refined search
-I wanted users to be able to limit the number of film results that are displayed from their database by searching for a particular actor, director, or genre. I created a form that allowed the user to be able to pick one of the three options and then write a search term. Then I would retrieve the information from the form and query the database for movie objects that contained the search word. If the query set was empty, I re-rendered the page, passing information to load the modal that is described later.
+I wanted users to be able to limit the number of film results that are displayed from their database by searching for a particular actor, director, or genre. I created a form that allowed the user to be able to pick one of the three options and then write a search term. Then I would retrieve the information from the form and query the database for movie objects that contained the search word. If the query set was empty, I re-rendered the page, passing information to load the modal that is described [later](#modal-on-error).
 
         def films(request):
             form = FilmRefineForm(data=request.POST or None)    # Load film search refine form
@@ -89,7 +89,7 @@ I wanted users to be able to limit the number of film results that are displayed
                         return render(request, 'SceneBetter/scenebetter_yourfilms.html', content)
 
 ### Front End
-* [Modal on ErrorI](#modal-on-error)
+* [Modal on Error](#modal-on-error)
 * [Clickable table row](#clickable-table-row)
 
 #### Modal on Error
