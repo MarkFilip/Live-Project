@@ -1,7 +1,7 @@
-# The Tech Academy Live Project
+# Live Project
 
 ## Introduction
-For the last 2 weeks of the tech academy we were tasked with creating an application that would be used to manage one’s collection of things related to a hobby. I made an application that one could use to store ratings and reviews of movies they have seen and allow them to organize it by director, actor, or genre. [Here](https://www.youtube.com/watch?v=Msfq_nhBFB0) is a video of the application in action.
+During a 2-week sprint, I tasked with creating an application that would be used to manage one’s collection of things related to a hobby. I made an application that one could use to store ratings and reviews of movies they have seen and allow them to organize it by director, actor, or genre. [Here](https://www.youtube.com/watch?v=Msfq_nhBFB0) is a video of the application in action.
 
 ## Code Highlights:
 ### Back End
